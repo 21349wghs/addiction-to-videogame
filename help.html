@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Addiction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/smalllogo.png" type="image/png">
+</head> 
+<body>
+    <section class="help-header">
+        <nav>
+            <a href="index.html"> <img src="images/newlogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="learnmore.html">LEARN MORE</a></li>
+                    <li><a href="quitnow.html">QUIT NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Get Help</h1>
+</section>
+<!--Help-->
+<section class="Home">
+    <h1>Need Help with Video Game Addiction?</h1>
+    <p>Find out how to spot the signs, understand the effects, and take steps toward a healthier balance.</p>
+
+
+    <div class="row">
+        <div class="home-col">
+            <h3>Signs of addiction</h3>
+            <p>Video game addiction hurts your life by making you ignore school, friends, and health. It can cause tiredness, poor sleep, pain, and feelings of stress or loneliness.</p>
+        </div>
+        <div class="home-col">
+            <h3>How gaming affects Health</h3>
+            <p>Playing too much can hurt your mind and body. It may cause anxiety, poor sleep, back pain, and make you less active.</p>
+        </div>
+        <div class="home-col">
+            <h3>What can you do</h3>
+            <p>Set time limits, take breaks, and avoid gaming before bed. Do other activities and spend time with friends. If gaming causes problems, ask a doctor, or counselor for help. You’re not alone.</p>
+        </div>
+    </div>
+
+
+</section>
+<!--Information-->
+<section class="Information help-images">
+<h1> Play Smart, Live Better</h1>
+<p>Think gaming is just harmless fun? It can be until it starts messing with your sleep, stress, focus, and even your health. This section dives into how too much screen time can affect your mental health, brain power, and body, and gives you tips to find balance before the game starts playing you.
+</p>
+<div class="row">
+    <div class="Information-col">
+        <a href="https://www.freepik.com" target="_blank">
+            <img src="/images/gameover1.jpg" alt="Game Over">
+        </a>
+        <h3>Game over</h3>
+        <p>A glitchy skull with game controller buttons and the words "Game Over" symbolises the dark side of excessive gaming.</p>
+    </div>
+    <div class="Information-col">
+        <a href="https://www.istockphoto.com" target="_blank">
+            <img src="/images/angry.jpg" alt="Disconnected From Reality">
+        </a>
+        <h3>Disconnected From Reality</h3>
+        <p>A man absorbed in gaming with headphones on while a woman stands behind him, looking upset, shows how addiction can hurt relationships.</p>
+    </div>
+    <div class="Information-col">
+        <a href="https://www.freepik.com" target="_blank">
+            <img src="/images/stop.jpg" alt="Time to Stop">
+        </a>
+        <h3>Time to Stop</h3>
+        <p>A monitor with the word "STOP" warns viewers to take control and limit their screen time.</p>
+    </div>
+</div>
+
+
+</section>
+
+
+<!--Footer-->
+<section class="Footer">
+    <p>© 2025 Addiction to Video Games | All rights reserved.</p>
+    <p>This website was created for an educational project on video game addiction.</p>
+    <p> Made by Hayley Le &hearts;</p>
+    <p>Image credits: 
+    <a href="https://www.istockphoto.com" target="_blank">iStock</a>, 
+    <a href="https://www.freepik.com" target="_blank">Freepik</a>, 
+    <a href="https://www.pixabay.com" target="_blank">Pixabay</a>
+  </p>
+</section>
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+  // Scroll to top behavior
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Show/hide button on scroll
+  window.onscroll = function () {
+    let btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+</script>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>  
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Addiction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/smalllogo.png" type="image/png">
+</head> 
+<body>
+    <section class="quit-header">
+        <nav>
+            <a href="index.html"> <img src="images/newlogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="learnmore.html">LEARN MORE</a></li>
+                    <li><a href="quitnow.html">QUIT NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Quit Now!</h1>
+</section>
+
+<section class="inspiration-layout">
+    <div class="inspiration-left">
+        <h4>Every hour you spend in a game is an hour you could be building the life you dream about. Imagine if the same energy you put into levelling up your character was spent levelling up yourself, your health, your skills, and your relationships. One day you will not remember the matches you won, but you will feel the life you built because you chose to play the real game. You can do it.</h4>
+    </div>
+    <div class="inspiration-image">
+        <a href="https://www.istockphoto.com" target="_blank">
+        <img src="images/team.jpg">
+        </a>
+    </div>
+    <div class="inspiration-right">
+        <h4>Life moves forward whether you play or not. While a game can be paused, real moments cannot. Friendships, experiences, and opportunities pass by quietly when you are too focused on a screen. Look up, step out, and take part in the world around you because the memories you make outside the game will be the ones you carry forever.</h4>
+    </div>
+</section>
+
+
+<!--Footer-->
+<section class="Footer">
+    <p>© 2025 Addiction to Video Games | All rights reserved.</p>
+    <p>This website was created for an educational project on video game addiction.</p>
+    <p> Made by Hayley Le &hearts;</p>
+    <p>Image credits: 
+    <a href="https://www.istockphoto.com" target="_blank">iStock</a>, 
+    <a href="https://www.freepik.com" target="_blank">Freepik</a>, 
+    <a href="https://www.pixabay.com" target="_blank">Pixabay</a>
+  </p>
+</section>
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+  // Scroll to top behavior
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Show/hide button on scroll
+  window.onscroll = function () {
+    let btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+</script>
+
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>  
+</html>

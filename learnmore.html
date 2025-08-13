@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Addiction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/smalllogo.png" type="image/png">
+</head> 
+<body>
+    <section class="page-header">
+        <nav>
+            <a href="index.html"> <img src="images/newlogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                     <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="learnmore.html">LEARN MORE</a></li>
+                    <li><a href="quitnow.html">QUIT NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Learn more about addiciton to video games</h1>
+</section>
+<!--Learn More-->
+<section class="Learn-content">
+    <div class="row">
+        <div class="learn-left">
+            <a href="https://www.istockphoto.com" target="_blank">
+    <img src="images/helpstopnow.jpg" alt="Help Stop Now">
+</a>
+            <h2>Learn More!! We can help!</h2>
+            <p>While video games can be fun and improve skills like problem-solving and coordination, excessive gaming can seriously harm your mental, emotional, and physical health. Video game addiction often begins as a way to escape stress or problems, but it can quickly turn into a harmful cycle. Common signs include withdrawal symptoms like anxiety, irritability, and neglecting school, work, or relationships.</p>
+            <br>
+            <p>Teenagers, especially males aged 12–16, are most at risk due to long gaming hours, multiplayer games, and daily play. Addiction can lead to increased depression, social anxiety, inattention, poor sleep, and physical issues like bad posture, eye strain, and lack of fitness. These effects worsen over time if gaming is not managed.</p>
+            <br>
+            <p>To stop the addiction, it’s important to set screen time limits, take regular breaks, avoid late-night gaming, and balance play with real-life activities like exercise and face-to-face time with friends and family. If gaming starts to take over your life or affect your well-being, don’t wait and seek support from a trusted adult, school counselor, or mental health professional. You’re not alone, and recovery is possible with the right help and healthy habits.</p>
+            <div class="comment-box">
+
+                <h3>Sign up if you need help</h3>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <input type="number" placeholder="Enter Phone Number">
+                    <textarea rows="5" placeholder="How you think we can help you "></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send!!</button>
+                </form>
+            </div>
+        </div>
+        <div class="learn-right">
+            <h3>Stages of Quitting Addiction</h3>
+            <div>
+                <span>Recognise the Problem</span>
+            </div>
+            <div>
+                <span>Understand the Impact</span>
+            </div>
+              <div>
+                <span>Set Healthy Boundaries</span>
+            </div>
+              <div>
+                <span>Replace Gaming with Healthy Habits</span>
+            </div>
+              <div>
+                <span>Build a Support System</span>
+            </div>
+              <div>
+                <span>Seek Professional Help</span>
+            </div>
+              <div>
+                <span>Stay Motivated</span>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!--Footer-->
+<section class="Footer">
+    <p>© 2025 Addiction to Video Games | All rights reserved.</p>
+    <p>This website was created for an educational project on video game addiction.</p>
+    <p> Made by Hayley Le &hearts;</p>
+    <p>Image credits: 
+    <a href="https://www.istockphoto.com" target="_blank">iStock</a>, 
+    <a href="https://www.freepik.com" target="_blank">Freepik</a>, 
+    <a href="https://www.pixabay.com" target="_blank">Pixabay</a>
+  </p>
+</section>
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+  // Scroll to top behavior
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Show/hide button on scroll
+  window.onscroll = function () {
+    let btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+</script>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>  
+</html>
